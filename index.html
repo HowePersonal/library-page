@@ -9,15 +9,28 @@
 </head>
 <body>
     <div class="library-header">
-
+        <p>Your Library</p>
     </div>
 
     <div class="library-inputs">
+        <form id="form-input">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
 
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+
+            <label for="currentPage">Current Page</label>
+            <input type="text" id="currentPage" name="currentPage">
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
     </div>
 
     <div class="library-content">
+        <ul class="content-books">
 
+        </ul>
     </div>
 </body>
 </html>
