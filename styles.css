@@ -1,0 +1,108 @@
+body { 
+    min-height: 100vh; 
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 6fr;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.library-header {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.library-inputs {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#form-input {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 1fr;
+    font-size: 20px;
+}
+
+.single-input {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.single-input input {
+    border-radius: 7px;
+    border: 1px solid lightgrey;
+    height: 25px;
+    min-width: 30px;
+}
+
+#title-input {
+    grid-column: 2/3;
+}
+
+#form-input button {
+    grid-row: 2;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    height: 25px;
+    background: lightseagreen;
+}
+
+.library-content {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    grid-template-rows: 0.3fr 5fr;
+}
+
+.library-content .book-labels {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    font-weight: bold;
+    font-size: 17px;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    border-bottom: 1px solid black;
+}
+
+.library-content .book-labels p {
+    margin-left: 5px;
+    min-width: 30px;
+}
+
+#book-boxes {
+    grid-row: 2/-1;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    margin-top: 15px;
+}
+
+#book-boxes li {
+    padding-left: 5px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+}
+
+.deleteButton {
+    background-color: lightgrey;
+    border: 0;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    min-width: 10px;
+    
+}
+
+.deleteButton:hover {
+    background-color: red;
+}
