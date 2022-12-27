@@ -14,10 +14,12 @@ const submit = document.getElementById("submit");
 
 const books = [];
 
-function Book(title, author, currentPage) {
-    this.title = title;
-    this.author = author;
-    this.curentPage = currentPage;
+class Book {
+    constructor(title, author, currentPage) {
+        this.title = title;
+        this.author = author;
+        this.curentPage = currentPage;
+    }
 }
 
 form.addEventListener("submit", function(event) {
